@@ -48,11 +48,16 @@ function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <Head>
         <title>{db.title}</title>
+        
+        <meta property="og:locale" content="pt_BR"/>
+        <meta property="og:url" content="https://aluraquiz-onepiece.diassisfilho.vercel.app/"/>
+        <meta property="og:type" content="website"/>
+
 
         <meta property="og:image" content={db.bg}/>
         <meta property="og:image:type" content="image/jpeg"/>
-        <meta property="og:image:width" content="1920"/>
-        <meta property="og:image:height" content="1200"/>
+        <meta property="og:image:width" content="810"/>
+        <meta property="og:image:height" content="600"/>
 
         <meta property="og:title" content={db.title}/>
 
@@ -61,16 +66,16 @@ function Home() {
       <QuizContainer>
         <Widget>
           <Widget.Header>
-            <h1>One Piece</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Quiz para testar seus conhecimentos</p>
+            <p>{db.description}</p>
           </Widget.Content>
         </Widget>
         <Widget>
           <Widget.Content>
-            <h1>Quizes do povo</h1>
-            <p>Quizes para testar seus conhecimentos</p>
+            <h1>Quizes da galera</h1>
+            <p>Outros quizes para testar seus conhecimentos</p>
           </Widget.Content>
         </Widget>
 
