@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint-init": "eslint --init",
+    "lint-fix": "eslint . --fix"
   },
   "dependencies": {
     "next": "^10.0.5",
@@ -14,7 +16,8 @@
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
+    "babel-plugin-styled-components": "^1.8.0",
+    "eslint": "^7.19.0"
   },
   "license": "MIT"
 }

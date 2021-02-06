@@ -45,6 +45,6 @@ function GitHubCorner({ projectUrl }) {
       </a>
     </Wrapper>
   );
-};
+}
 
 export default GitHubCorner;
